@@ -1,0 +1,170 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Manrope&family=Open+Sans&family=Poppins&family=Work+Sans&display=swap');
+
+/* common styles */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header styles */
+header {
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    margin-right: 120px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0 0 120px;
+    align-items: center;
+}
+
+.header-title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #3A3A3A;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+nav li {
+    list-style: none;
+}
+
+.header-info {
+    display: flex;
+    padding: 50px 20px 20px 120px;
+    align-items: center;
+    gap: 130px;
+}
+
+.info-title {
+    font-weight: 700;
+    font-size: 52px;
+    color: #3A3A3A;
+}
+
+.info {
+    font-weight: 600;
+}
+
+.btn {
+    width: 196px;
+    height: 44px;
+    background-color: #E02C6D;
+    border: 1px solid #E02C6D;
+    border-radius: 41px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+/* main styles */
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin: 70px 165px 100px 165px;
+    padding: 35px 60px;
+    border-top: 1px solid #DFE5EC;
+    border-bottom: 1px solid #DFE5EC;
+}
+
+/* product section styles */
+.product-section-title{
+    font-weight: 700;
+    font-size: 28px;
+    color: #3A3A3A;
+    text-align: center;
+}
+.product-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    margin: 0 196px;
+}
+.product-item{
+    padding: 15px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.product-items img {
+    width: 300px;
+    height: 256px;
+    border-radius: 5px;
+}
+
+.product-title {
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 28px;
+    color: #18191F;
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+}
+.star{
+    color: #FB8200;
+}
+.product-price {
+    margin: 0;
+}
+
+.rating {
+    padding-left: 20px;
+    color: #5E6366;
+}
+.product-info{
+    font-weight: 700;
+    font-size: 14px;
+    color: #787885;
+}
+
+
+/* responsive styles */
+/* small device */
+@media screen and (max-width: 576px) {
+    header {
+        background-image: none;
+        margin: 0;
+    }
+
+    .nav,
+    .nav ul {
+        flex-direction: column;
+        padding: 20px;
+        align-items: flex-start;
+    }
+
+    .header-info {
+        flex-direction: column-reverse;
+        padding: 20px;
+        gap: 0;
+    }
+
+    .info-1 {
+        text-align: center;
+    }
+
+    .logo-section {
+        flex-wrap: wrap;
+        border: 0;
+        margin: 20px 0 0 0;
+        padding: 0;
+        gap: 20px;
+    }
+}
+
+/* medium device */
+@media screen and (min-width: 577px) and (max-width: 992px) {}
